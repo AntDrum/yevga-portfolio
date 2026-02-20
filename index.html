@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Основные SEO-метатеги (самое важное) -->
+    <title>YEVGA — Professional Photo Retoucher | color grading, fashion & e-commerce Retouching</title>
+    <meta name="description" content="Professional photo retouching services by YEVGA. Expert ghost mannequin, natural skin, jewelry, body and e-commerce retouching. Fast delivery, high-end quality.">
+
+    <!-- Ключевые слова (не критичны, но добавим) -->
+    <meta name="keywords" content="photo retouching, ghost mannequin retouching, jewelry retouching, skin retouching, e-commerce retouching, professional retoucher, before after retouching">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://yourdomain.com/">
+
+    <!-- Open Graph (для Instagram, Facebook, Telegram, VK) -->
+    <meta property="og:title" content="YEVGA — Professional Photo Retoucher">
+    <meta property="og:description" content="High-end retouching services: ghost mannequin, natural skin, jewelry and fashion. Fast turnaround.">
+    <meta property="og:image" content="https://yourdomain.com/images/Hero1bs.png">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="YEVGA Retouching">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="YEVGA — Professional Photo Retoucher">
+    <meta name="twitter:description" content="Expert retouching for fashion, e-commerce and luxury brands.">
+    <meta name="twitter:image" content="https://yourdomain.com/images/Hero1bs.png">
+
+    <!-- Дополнительно -->
+    <meta name="author" content="YEVGA">
+    <meta name="robots" content="index, follow">
+    <!-- Bootstrap 5.3 CSS через CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Кастомные стили -->
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    
+
+    /* Navbar — твой цвет */
+        .navbar { background-color: #3d2131 !important; }
+
+    /* Hero — новый нежный фон */
+        .hero { 
+        background-color: #dbcbd2; 
+        color: #3d2131; 
+        padding: 160px 0; 
+        text-align: center;
+    }
+        .hero h1 { 
+        font-size: 4.5rem; 
+        font-weight: 700; 
+        margin-bottom: 1rem;
+    }
+        .hero .lead { 
+        font-size: 1.5rem; 
+        margin-bottom: 2rem;
+        color: #5d2f4d;
+    }
+        .hero .btn-light {
+        background-color: white;
+        color: #3d2131;
+        border: 2px solid #3d2131;
+        padding: 12px 32px;
+        font-weight: 600;
+    }
+        .hero .btn-light:hover {
+        background-color: #3d2131;
+        color: white;
+    }
+        .carousel-fade .carousel-item {
+        transition-duration: 0.2s !important; /* было ~0.6s */
+        transition-timing-function: ease-in-out;
+}
+        .carousel-caption {
+  transition: opacity 0.2s ease-in-out;
+}
+.carousel-caption h1,
+.carousel-caption p.lead {
+  color: #5d2f4d !important;
+}
+
+.carousel-item:not(.active) .carousel-caption {
+  opacity: 0 !important;
+  visibility: hidden;
+}
+
+.carousel-item.active .carousel-caption {
+  opacity: 1;
+  visibility: visible;
+}
+        .img-thumbnail { 
+        transition: transform 0.3s; 
+        cursor: pointer; 
+    }
+        .img-thumbnail:hover { 
+        transform: scale(1.05); 
+        box-shadow: 0 10px 30px rgba(61,33,49,0.15); 
+    }
+        .gallery-img {
+         cursor: pointer;
+        transition: opacity 0.3s;
+        }
+        .gallery-img:hover {
+        opacity: 0.85;
+                }
+         .card {
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+        .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(61, 33, 49, 0.15) !important;
+    }
+    .card-header {
+    background-color: #dbcbd2!important;
+    color: #5d2f4d !important;          /* твой тёмный цвет из navbar для текста */
+    border-bottom: 1px solid #e0b0e0;   /* лёгкая граница для красоты, опционально */
+    }
+    body {
+        background-color: #dbcbd2 !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .btn-primary {
+    background-color: #3d2131 !important;
+     border-color: #3d2131 !important;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+    background-color: #2a1623 !important;     /* чуть темнее для hover-эффекта */
+    border-color: #2a1623 !important;
+    }
+    .row.g-4.justify-content-center .card .btn,
+    .row.g-4.justify-content-center .btn {
+    --bs-btn-bg: #3d2131;
+    --bs-btn-border-color: #3d2131;
+    --bs-btn-hover-bg: #2a1623;
+    --bs-btn-hover-border-color: #2a1623;
+    --bs-btn-active-bg: #1f0f19;
+    --bs-btn-active-border-color: #1f0f19;
+    color: white;
+    }
+    .card.border-primary, .card {
+    border-color: #3d2131 !important;
+    }
+
+    / * если хочешь чуть толще контур (опционально) */
+    .card {
+    border-width: 2px !important;  /* было 1px, можно сделать 2px */
+    }
+
+    .blockquote.border-start.border-5 {
+    border-color: #3d2131 !important;
+    }
+
+    footer a {
+    transition: color 0.3s, transform 0.3s;
+        }
+    footer a:hover {
+    color: #ffccff !important;          /* нежно-розовый из твоей палитры */
+    transform: scale(1.2);
+    }
+    .particles-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  will-change: transform, opacity;
+}
+
+@keyframes float {
+  0%   { transform: translate(0, 0); opacity: 0.1; }
+  25%  { transform: translate(calc(30vw - 15vw), calc(20vh - 10vh)); opacity: 0.8; }
+  50%  { transform: translate(calc(-20vw + 10vw), 40vh); opacity: 0.4; }
+  75%  { transform: translate(calc(10vw - 5vw), calc(30vh - 15vh)); opacity: 0.7; }
+  100% { transform: translate(0, 120vh); opacity: 0; }
+}
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">YEVGA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#prices">Prices</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog/index.html">Blog</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+                        <!-- Hero Carousel вместо обычной hero-секции -->
+<section id="home" class="mb-5">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    
+    <!-- Индикаторы (точки внизу) -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Слайды -->
+    <div class="carousel-inner">
+
+      <!-- Слайд 1 – Portfolio -->
+      <div class="carousel-item active" style="background: rgba(240,209,240,0.25); min-height: 70vh; background-size: cover; background-position: center;">
+        <div class="container">
+          <div class="carousel-caption d-flex flex-column justify-content-center h-100 text-start text-white">
+            <h1 class="display-3 fw-bold mb-4">My Portfolio</h1>
+            <p class="lead fs-4 mb-4">Explore my latest web design, UI/UX and retouching projects</p>
+            <a href="#portfolio" class="btn btn-lg px-5 py-3" style="background-color:#3d2131; border-color:#3d2131; color:white;">
+              View Portfolio
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Слайд 2 – Blog -->
+      <div class="carousel-item" style="background: lrgba(240,209,240,0.25); min-height: 70vh; background-size: cover; background-position: center;">
+        <div class="container">
+          <div class="carousel-caption d-flex flex-column justify-content-center h-100 text-start text-white">
+            <h1 class="display-3 fw-bold mb-4">My Blog</h1>
+            <p class="lead fs-4 mb-4">Tips, tutorials and behind-the-scenes of design & retouching</p>
+            <a href="#blog" class="btn btn-lg px-5 py-3" style="background-color:#3d2131; border-color:#3d2131; color:white;">
+              Read Articles
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Слайд 3 – Reviews -->
+      <div class="carousel-item" style="background: rgba(240,209,240,0.25); min-height: 70vh; background-size: cover; background-position: center;">
+        <div class="container">
+          <div class="carousel-caption d-flex flex-column justify-content-center h-100 text-start text-white">
+            <h1 class="display-3 fw-bold mb-4">Client Reviews</h1>
+            <p class="lead fs-4 mb-4">What my clients say about working with me</p>
+            <a href="#reviews" class="btn btn-lg px-5 py-3" style="background-color:#3d2131; border-color:#3d2131; color:white;">
+              See Testimonials
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Стрелки -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+    
+    <!-- Retouch Section= About me – Responsive left-aligned hero with image -->
+    <section id="about" class="py-5 py-lg-5">
+    <div class="container">
+        <div class="row align-items-center gy-5 gy-lg-0">
+            
+            <!-- Левая часть: текст (left-aligned) -->
+            <div class="col-lg-6 order-2 order-lg-1">
+                <h2 class="display-5 fw-bold mb-4" style="color: #3d2131;">About me</h2>
+                <p class="lead lh-lg mb-4">
+                    I’m Yevheniia, a professional retoucher with over 5 years of experience in high-end e-commerce, jewelry, beauty, and fashion retouching. I specialize in clean, commercial visuals with precise skin, product, fabric, and color correction for web and print.
+                <p class="mb-4">
+                    I’ve collaborated with international photographers, fashion brands, and marketing agencies, including Helen Marlen Group, Terani Couture (NYC), Upscale-Marketing (EU), She's Waisted (USA), Dominique Renée® (USA), Ellie Lowe(GB), Snap Supplements (USA), Scavini and Véronique Leroy (France), and startups like Hilu (USA). My work includes e-commerce, headshots, interiors, and campaign imagery, as well as collaborations with fashion photographer Marty Gottlieb, with publications in Marika Magazine and displays in Times Square, New York. I’ve also retouched campaigns featuring models such as Maria Moda, Megan Victoria Hanks, and Lynn Kelly.
+                </p>
+                </p>
+                <a href="#contact" class="btn btn-primary btn-lg px-5" style="background-color: #3d2131; border-color: #3d2131;">Order retouch</a>
+            </div>
+            
+            <!-- Правая часть: изображение (Portrait) -->
+            <div class="col-lg-6 order-1 order-lg-2 text-center text-lg-end">
+                <img src="images/Hero1bs.png" 
+                     class="img-fluid rounded-4 shadow-lg" 
+                     alt="Professional retoucher portrait" 
+                     loading="lazy" 
+                     width="900" height="900">
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- Reviews Section – Left-aligned text + Horizontal Carousel with client photos -->
+
+    <!-- Portfolio – 8 отдельных каруселей в responsive grid -->
+    <section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5" style="color: #3d2131;">Portfolio</h2>
+        
+            <div class="row g-4">
+                                                        <div class="col-lg-3 col-md-4 col-sm-6">
+                                                            <div class="card h-100 shadow-sm border-0">
+                                                                <div class="card-header text-center" style="background:#ffccff; color:#3d2131">
+                                                                    <h6 class="mb-0">Campaign retouching for She's Waisted</h6>
+                                                                </div>
+                                                                <div class="card-body p-0">
+                                                                     <div id="carousel1" class="carousel slide" data-bs-interval="false">
+                                                                         <div class="carousel-inner">
+                                                                            <!-- Слайды проекта -->
+                                                                            <div class="carousel-item active">
+                                                                            <img src="images/sw/Swaisted1.webp" class="d-block w-100 gallery-img" alt="P1-1" loading="lazy" data-full="images/sw/Swaisted1full.webp">
+                                                                            </div>
+                                                                            <div class="carousel-item">
+                                                                            <img src="images/sw/Swaisted2.webp" class="d-block w-100 gallery-img" alt="P1-2" loading="lazy" data-full="images/sw/Swaisted2full.webp">
+                                                                            </div>
+                                                                            <div class="carousel-item">
+                                                                            <img src="images/sw/Swaisted3.webp" class="d-block w-100 gallery-img" alt="P1-3" loading="lazy" data-full="images/sw/Swaisted3full.webp">
+                                                                            </div>
+                                                                            <!-- добавь остальные слайды этого проекта -->
+                                                                        </div>
+                                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon"></span>
+                                                                        </button>
+                                                                        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"></span>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-4 col-sm-6">
+                                                            <div class="card h-100 shadow-sm border-0">
+                                                                <div class="card-header text-center" style="background:#ffccff; color:#3d2131">
+                                                                    <h6 class="mb-0">Retouching for brand Véronique Leroy</h6>
+                                                                </div>
+                                                                <div class="card-body p-0">
+                                                                     <div id="carousel2" class="carousel slide" data-bs-interval="false">
+                                                                         <div class="carousel-inner">
+                                                                            <!-- Слайды проекта -->
+                                                                            <div class="carousel-item active">
+                                                                            <img src="images/vl/fashin1.webp" class="d-block w-100 gallery-img" alt="P2-1" loading="lazy" data-full="images/vl/fashin1full.webp">
+                                                                            </div>
+                                                                            <div class="carousel-item">
+                                                                            <img src="images/vl/fashin2.webp" class="d-block w-100 gallery-img" alt="P2-2" loading="lazy" data-full="images/vl/fashin2full.webp">
+                                                                            </div>
+                                                                            <div class="carousel-item">
+                                                                            <img src="images/vl/fashin3.webp" class="d-block w-100 gallery-img" alt="P2-3" loading="lazy" data-full="images/vl/fashin3full.webp" data-title="">
+                                                                            </div>
+                                                                            <div class="carousel-item">
+                                                                            <img src="images/vl/fashin4.webp" class="d-block w-100 gallery-img" alt="P2-4" loading="lazy" data-full="images/vl/fashin4full.webp" data-title="">
+                                                                            </div>
+                                                                            <div class="carousel-item"> 
+                                                                            <img src="images/vl/fashin5.webp" class="d-block w-100 gallery-img" alt="P2-5" loading="lazy" data-full="images/vl/fashin5full.webp" data-title="">
+                                                                            </div>
+                                                                            <div class="carousel-item"> 
+                                                                            <img src="images/vl/fashin6.webp" class="d-block w-100 gallery-img" alt="P2-6" loading="lazy" data-full="images/vl/fashin6full.webp" data-title="">
+                                                                            </div>
+                                                                            <div class="carousel-item"> 
+                                                                            <img src="images/vl/fashin7.webp" class="d-block w-100 gallery-img" alt="P2-7" loading="lazy" data-full="images/vl/fashin7full.webp" data-title="">
+                                                                            </div>
+                                                                            <div class="carousel-item"> 
+                                                                            <img src="images/vl/fashin8.webp" class="d-block w-100 gallery-img" alt="P2-8" loading="lazy" data-full="images/vl/fashin8full.webp" data-title="">
+                                                                            </div>
+                                                                            <div class="carousel-item"> 
+                                                                            <img src="images/vl/fashin9.webp" class="d-block w-100 gallery-img" alt="P2-9" loading="lazy" data-full="images/vl/fashin5full.webp" data-title="">
+                                                                            </div>
+                                                                            <div class="carousel-item"> 
+                                                                            <img src="images/vl/fashin10.webp" class="d-block w-100 gallery-img" alt="P2-10" loading="lazy" data-full="images/vl/fashin10full.webp" data-title="">
+                                                                            </div>
+                                                                            <!-- добавь остальные слайды этого проекта -->
+                                                                        </div>
+                                                                         <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                                                                                <span class="carousel-control-prev-icon"></span>
+                                                                        </button>
+                                                                        <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon"></span>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-4 col-sm-6">
+                                                            <div class="card h-100 shadow-sm border-0">
+                                                                <div class="card-header text-center" style="background:#ffccff; color:#3d2131">
+                                                                    <h6 class="mb-0">Retouching for French fashion brand Scaviny</h6>
+                                                                </div>
+                                                                    <div class="card-body p-0">
+                                                                        <div id="carousel3" class="carousel slide" data-bs-interval="false">
+                                                                            <div class="carousel-inner">
+                                                                                <div class="carousel-item active">
+                                                                                <img src="images/sc/Scavini2.webp" class="d-block w-100 gallery-img" alt="P3-1" loading="lazy" data-full="images/sc/Scavini2full.webp" data-title="">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                <img src="images/sc/Scavini1.webp" class="d-block w-100 gallery-img" alt="P3-2" loading="lazy" data-full="images/sc/Scavini1full.webp" data-title="">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                <img src="images/sc/Scavini3.webp" class="d-block w-100 gallery-img" alt="P3-3" loading="lazy" data-full="images/sc/Scavini3full.webp" data-title="">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                <img src="images/sc/Scavini4.webp" class="d-block w-100 gallery-img" alt="P3-4" loading="lazy" data-full="images/sc/Scavini5full.webp" data-title="">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                <img src="images/sc/Scavini6.webp" class="d-block w-100 gallery-img" alt="P3-5" loading="lazy" data-full="images/sc/Scavini6full.webp" data-title="">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                <img src="images/sc/Scavini7.webp" class="d-block w-100 gallery-img" alt="P3-6" loading="lazy" data-full="images/sc/Scavini7full.webp" data-title="">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                <img src="images/sc/Scavini8.webp" class="d-block w-100 gallery-img" alt="P3-7" loading="lazy" data-full="images/sc/Scavini8full.webp" data-title="">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                <img src="images/sc/Scavini9.webp" class="d-block w-100 gallery-img" alt="P3-8" loading="lazy" data-full="images/sc/Scavini9full.webp" data-title="">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                <img src="images/sc/Scavini10.webp" class="d-block w-100 gallery-img" alt="P3-9" loading="lazy" data-full="images/sc/Scavini10full.webp" data-title="">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                <img src="images/sc/Scavini5.webp" class="d-block w-100 gallery-img" alt="P3-10" loading="lazy"data-full="images/sc/Scavini5full.webp" data-title="">
+                                                                                </div>
+                                                                            </div>
+
+                                                                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                                                                                <span class="carousel-control-prev-icon"></span>
+                                                                                </button>
+                                                                                <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                                                                                <span class="carousel-control-next-icon"></span>
+                                                                                </button>
+
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                            </div>
+                                                        </div>
+
+                                                    <div class="col-lg-3 col-md-4 col-sm-6">
+                                                        <div class="card h-100 shadow-sm border-0">
+                                                            <div class="card-header text-center" style="background:#ffccff; color:#3d2131">
+                                                                <h6 class="mb-0">Retouching for Ethiopia-based Pan-African lifestyle brand Afropian</h6>
+                                                            </div>
+                                                                <div class="card-body p-0">
+                                                                    <div id="carousel4" class="carousel slide" data-bs-interval="false">
+                                                                        <div class="carousel-inner">
+                                                                            <div class="carousel-item active">
+                                                                            <img src="images/af/af1.webp" class="d-block w-100 gallery-img" alt="P4-1"loading="lazy" data-full="images/af/af1f.webp">          
+                                                                            </div>
+                                                                            <div class="carousel-item">
+                                                                            <img src="images/af/af2.webp" class="d-block w-100 gallery-img" alt="P4-2"loading="lazy" data-full="images/af/af2f.webp">
+                                                                            </div>
+                                                                            <div class="carousel-item">
+                                                                            <img src="images/af/af3.webp" class="d-block w-100 gallery-img" alt="P4-3"loading="lazy" data-full="images/af/af3f.webp">
+                                                                            </div>
+                                                                            <div class="carousel-item">
+                                                                            <img src="images/af/af4.webp" class="d-block w-100 gallery-img" alt="P4-4"loading="lazy" data-full="images/af/af4f.webp">
+                                                                            </div>
+                                                                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+                                                                            <span class="carousel-control-prev-icon"></span>
+                                                                            </button>
+                                                                            <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+                                                                            <span class="carousel-control-next-icon"></span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                        </div>
+                                                    </div>    
+
+                                                                            
+                                                    <div class="col-lg-3 col-md-4 col-sm-6">
+                                                        <div class="card h-100 shadow-sm border-0">
+                                                                    <div class="card-header text-center" style="background:#ffccff; color:#3d2131">
+                                                                    <h6 class="mb-0">Retouching for Dominique Renée: Sustainable Jewelry & Accessories</h6>
+                                                                    </div>
+                                                                <div class="card-body p-0">
+                                                                        <div id="carousel5" class="carousel slide" data-bs-interval="false">
+                                                                            <div class="carousel-inner">
+                                                                                <div class="carousel-item active">
+                                                                                    <img src="images/dr/dr1.webp" class="d-block w-100 gallery-img" alt="P5-1"loading="lazy" data-full="images/dr/dr1f.webp">          
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/dr/dr2.webp" class="d-block w-100 gallery-img" alt="P5-2"loading="lazy" data-full="images/dr/dr2f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/dr/dr3.webp" class="d-block w-100 gallery-img" alt="P5-2"loading="lazy" data-full="images/dr/dr3f.webp">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel5" data-bs-slide="prev">
+                                                                            <span class="carousel-control-prev-icon"></span>
+                                                                            </button>
+                                                                            <button class="carousel-control-next" type="button" data-bs-target="#carousel5" data-bs-slide="next">
+                                                                            <span class="carousel-control-next-icon"></span>
+                                                                            </button>
+                                                                </div>
+                                                        </div> 
+                                                    </div>           
+
+
+
+
+                                                    <div class="col-lg-3 col-md-4 col-sm-6">
+                                                        <div class="card h-100 shadow-sm border-0">
+                                                                    <div class="card-header text-center" style="background:#ffccff; color:#3d2131">
+                                                                    <h6 class="mb-0"> Private body retouching for adults, delivered with confidentiality and professional discretion.</h6>
+                                                                    </div>
+                                                                <div class="card-body p-0">
+                                                                        <div id="carousel6" class="carousel slide" data-bs-interval="false">
+                                                                            <div class="carousel-inner">
+                                                                                <div class="carousel-item active">
+                                                                                    <img src="images/of/bd_1.webp" class="d-block w-100 gallery-img" alt="P6-1"loading="lazy" data-full="images/of/bd_1f.webp">          
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/of/bd_2.webp" class="d-block w-100 gallery-img" alt="P6-2"loading="lazy" data-full="images/of/bd_2f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/of/bd_3.webp" class="d-block w-100 gallery-img" alt="P6-3"loading="lazy" data-full="images/of/bd_3f.webp">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel6" data-bs-slide="prev">
+                                                                            <span class="carousel-control-prev-icon"></span>
+                                                                            </button>
+                                                                            <button class="carousel-control-next" type="button" data-bs-target="#carousel6" data-bs-slide="next">
+                                                                            <span class="carousel-control-next-icon"></span>
+                                                                            </button>
+                                                                </div>
+                                                        </div> 
+                                                    </div>           
+
+
+                                                    <div class="col-lg-3 col-md-4 col-sm-6">
+                                                        <div class="card h-100 shadow-sm border-0">
+                                                                    <div class="card-header text-center" style="background:#ffccff; color:#3d2131">
+                                                                    <h6 class="mb-0">Product & Lifestyle Retouching for Hilu — Crowdfunding Success
+                                                                    </h6>
+                                                                    </div>
+                                                                <div class="card-body p-0">
+                                                                        <div id="carousel7" class="carousel slide" data-bs-interval="false">
+                                                                            <div class="carousel-inner">
+                                                                                <div class="carousel-item active">
+                                                                                    <img src="images/hl/hl1.webp" class="d-block w-100 gallery-img" alt="P7-1"loading="lazy" data-full="images/hl/hl1f.webp">          
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/hl/hl2.webp" class="d-block w-100 gallery-img" alt="P7-2"loading="lazy" data-full="images/hl/hl2f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/hl/hl3.webp" class="d-block w-100 gallery-img" alt="P7-3"loading="lazy" data-full="images/hl/hl3f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/hl/hl4.webp" class="d-block w-100 gallery-img" alt="P7-4"loading="lazy" data-full="images/hl/hl4f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/hl/hl5.webp" class="d-block w-100 gallery-img" alt="P7-5"loading="lazy" data-full="images/hl/hl5f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/hl/hl6.webp" class="d-block w-100 gallery-img" alt="P7-6"loading="lazy" data-full="images/hl/hl6f.webp">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel7" data-bs-slide="prev">
+                                                                            <span class="carousel-control-prev-icon"></span>
+                                                                            </button>
+                                                                            <button class="carousel-control-next" type="button" data-bs-target="#carousel7" data-bs-slide="next">
+                                                                            <span class="carousel-control-next-icon"></span>
+                                                                            </button>
+                                                                </div>
+                                                        </div> 
+                                                    </div>    
+
+                                                    <div class="col-lg-3 col-md-4 col-sm-6">
+                                                        <div class="card h-100 shadow-sm border-0">
+                                                                    <div class="card-header text-center" style="background:#ffccff; color:#3d2131">
+                                                                    <h6 class="mb-0">Retouching for Snap Supplements – Product Stacking & Blending</h6>
+                                                                    </div>
+                                                                <div class="card-body p-0">
+                                                                        <div id="carousel8" class="carousel slide" data-bs-interval="false">
+                                                                            <div class="carousel-inner">
+                                                                                <div class="carousel-item active">
+                                                                                    <img src="images/snb/snb1.webp" class="d-block w-100 gallery-img" alt="P8-1"loading="lazy" data-full="images/snb/snb1f.webp">          
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/snb/snb2.webp" class="d-block w-100 gallery-img" alt="P8-2"loading="lazy" data-full="images/snb/snb2f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/snb/snb3.webp" class="d-block w-100 gallery-img" alt="P8-3"loading="lazy" data-full="images/snb/snb3f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/snb/snb4.webp" class="d-block w-100 gallery-img" alt="P8-4"loading="lazy" data-full="images/snb/snb4f.webp">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel8" data-bs-slide="prev">
+                                                                            <span class="carousel-control-prev-icon"></span>
+                                                                            </button>
+                                                                            <button class="carousel-control-next" type="button" data-bs-target="#carousel8" data-bs-slide="next">
+                                                                            <span class="carousel-control-next-icon"></span>
+                                                                            </button>
+                                                                </div>
+                                                        </div> 
+                                                    </div>                  
+                                                    <div class="col-lg-3 col-md-4 col-sm-6">
+                                                        <div class="card h-100 shadow-sm border-0">
+                                                                    <div class="card-header text-center" style="background:#ffccff; color:#3d2131">
+                                                                    <h6 class="mb-0"> Retouching studio lifestyle shoots for Marty Gottlieb</h6>
+                                                                    </div>
+                                                                <div class="card-body p-0">
+                                                                        <div id="carousel9" class="carousel slide" data-bs-interval="false">
+                                                                            <div class="carousel-inner">
+                                                                                <div class="carousel-item active">
+                                                                                    <img src="images/lfs/s_1.webp" class="d-block w-100 gallery-img" alt="P10-1"loading="lazy" data-full="images/lfs/s_1f.webp">          
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/lfs/s_2.webp" class="d-block w-100 gallery-img" alt="P10-2"loading="lazy" data-full="images/lfs/s_2f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/lfs/s_3.webp" class="d-block w-100 gallery-img" alt="P10-3"loading="lazy" data-full="images/lfs/s_3f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/lfs/s_5.webp" class="d-block w-100 gallery-img" alt="P10-6"loading="lazy" data-full="images/lfs/s_5f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/lfs/s_6.webp" class="d-block w-100 gallery-img" alt="P10-7"loading="lazy" data-full="images/lfs/s_6f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/lfs/s_7.webp" class="d-block w-100 gallery-img" alt="P10-8"loading="lazy" data-full="images/lfs/s_7f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/lfs/s_8.webp" class="d-block w-100 gallery-img" alt="P10-8"loading="lazy" data-full="images/lfs/s_8f.webp">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel9" data-bs-slide="prev">
+                                                                            <span class="carousel-control-prev-icon"></span>
+                                                                            </button>
+                                                                            <button class="carousel-control-next" type="button" data-bs-target="#carousel9" data-bs-slide="next">
+                                                                            <span class="carousel-control-next-icon"></span>
+                                                                            </button>
+                                                                </div>
+                                                        </div> 
+                                                    </div>                  
+                                                    <div class="col-lg-3 col-md-4 col-sm-6">
+                                                        <div class="card h-100 shadow-sm border-0">
+                                                                    <div class="card-header text-center" style="background:#ffccff; color:#3d2131">
+                                                                    <h6 class="mb-0">Commercial lifestyle product retouching for Snap Supplements </h6>
+                                                                    </div>
+                                                                <div class="card-body p-0">
+                                                                        <div id="carousel10" class="carousel slide" data-bs-interval="false">
+                                                                            <div class="carousel-inner">
+                                                                                <div class="carousel-item active">
+                                                                                    <img src="images/sn/sn1.webp" class="d-block w-100 gallery-img" alt="P10-1"loading="lazy" data-full="images/sn/sn1f.webp">          
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/sn/sn2.webp" class="d-block w-100 gallery-img" alt="P10-2"loading="lazy" data-full="images/sn/sn2f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/sn/sn3.webp" class="d-block w-100 gallery-img" alt="P10-3"loading="lazy" data-full="images/sn/sn3f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/sn/sn4.webp" class="d-block w-100 gallery-img" alt="P10-4"loading="lazy" data-full="images/sn/sn4f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/sn/sn5.webp" class="d-block w-100 gallery-img" alt="P10-5"loading="lazy" data-full="images/sn/sn5f.webp">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel10" data-bs-slide="prev">
+                                                                            <span class="carousel-control-prev-icon"></span>
+                                                                            </button>
+                                                                            <button class="carousel-control-next" type="button" data-bs-target="#carousel10" data-bs-slide="next">
+                                                                            <span class="carousel-control-next-icon"></span>
+                                                                            </button>
+                                                                </div>
+                                                        </div> 
+                                                    </div>                  
+                                                    <div class="col-lg-3 col-md-4 col-sm-6">
+                                                        <div class="card h-100 shadow-sm border-0">
+                                                                    <div class="card-header text-center" style="background:#ffccff; color:#3d2131">
+                                                                    <h6 class="mb-0"> Retouching Fashion Models lookbooks</h6>
+                                                                    </div>
+                                                                <div class="card-body p-0">
+                                                                        <div id="carousel11" class="carousel slide" data-bs-interval="false">
+                                                                            <div class="carousel-inner">
+                                                                                <div class="carousel-item active">
+                                                                                    <img src="images/fs/fas_1.webp" class="d-block w-100 gallery-img" alt="P11-1"loading="lazy" data-full="images/fs/fas_1f.webp">          
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/fs/fas_2.webp" class="d-block w-100 gallery-img" alt="P11-2"loading="lazy" data-full="images/fs/fas_2f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/fs/fas_3.webp" class="d-block w-100 gallery-img" alt="P11-3"loading="lazy" data-full="images/fs/fas_3f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/fs/fas_4.webp" class="d-block w-100 gallery-img" alt="P11-4"loading="lazy" data-full="images/fs/fas_4f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/fs/fas_5.webp" class="d-block w-100 gallery-img" alt="P11-5"loading="lazy" data-full="images/fs/fas_5f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/fs/fas_6.webp" class="d-block w-100 gallery-img" alt="P11-6"loading="lazy" data-full="images/fs/fas_6f.webp">
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+
+                                                                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel11" data-bs-slide="prev">
+                                                                            <span class="carousel-control-prev-icon"></span>
+                                                                            </button>
+                                                                            <button class="carousel-control-next" type="button" data-bs-target="#carousel11" data-bs-slide="next">
+                                                                            <span class="carousel-control-next-icon"></span>
+                                                                            </button>
+                                                                </div>
+                                                        </div> 
+                                                    </div>                 
+                                                    <div class="col-lg-3 col-md-4 col-sm-6">
+                                                        <div class="card h-100 shadow-sm border-0">
+                                                                    <div class="card-header text-center" style="background:#ffccff; color:#3d2131">
+                                                                    <h6 class="mb-0"> E-commerce retouching for She's Waisted Brand</h6>
+                                                                    </div>
+                                                                <div class="card-body p-0">
+                                                                        <div id="carousel12" class="carousel slide" data-bs-interval="false">
+                                                                            <div class="carousel-inner">
+                                                                                <div class="carousel-item active">
+                                                                                    <img src="images/eco/eco1.webp" class="d-block w-100 gallery-img" alt="P12-1"loading="lazy" data-full="images/eco/eco1f.webp">          
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/eco/eco2.webp" class="d-block w-100 gallery-img" alt="P12-2"loading="lazy" data-full="images/eco/eco2f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/eco/eco3.webp" class="d-block w-100 gallery-img" alt="P12-3"loading="lazy" data-full="images/eco/eco3f.webp">
+                                                                                </div>
+
+
+                                                                            </div>
+                                                                        </div>
+
+                                                                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel12" data-bs-slide="prev">
+                                                                            <span class="carousel-control-prev-icon"></span>
+                                                                            </button>
+                                                                            <button class="carousel-control-next" type="button" data-bs-target="#carousel12" data-bs-slide="next">
+                                                                            <span class="carousel-control-next-icon"></span>
+                                                                            </button>
+                                                                </div>
+                                                        </div> 
+                                                    </div> 
+                                                    <div class="col-lg-3 col-md-4 col-sm-6">
+                                                        <div class="card h-100 shadow-sm border-0">
+                                                                    <div class="card-header text-center" style="background:#ffccff; color:#3d2131">
+                                                                    <h6 class="mb-0">Beauty retouching for makeup artist portfolio</h6>
+                                                                    </div>
+                                                                <div class="card-body p-0">
+                                                                        <div id="carousel13" class="carousel slide" data-bs-interval="false">
+                                                                            <div class="carousel-inner">
+                                                                                <div class="carousel-item active">
+                                                                                    <img src="images/bty/b-1.webp" class="d-block w-100 gallery-img" alt="P13-1"loading="lazy" data-full="images/bty/b-1f.webp">          
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/bty/b-f.webp" class="d-block w-100 gallery-img" alt="P13-2"loading="lazy" data-full="images/bty/b-2f.webp">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel13" data-bs-slide="prev">
+                                                                            <span class="carousel-control-prev-icon"></span>
+                                                                            </button>
+                                                                            <button class="carousel-control-next" type="button" data-bs-target="#carousel13" data-bs-slide="next">
+                                                                            <span class="carousel-control-next-icon"></span>
+                                                                            </button>
+                                                                </div>
+                                                        </div> 
+                                                    </div>  
+                                                    <div class="col-lg-3 col-md-4 col-sm-6">
+                                                        <div class="card h-100 shadow-sm border-0">
+                                                                    <div class="card-header text-center" style="background:#ffccff; color:#3d2131">
+                                                                    <h6 class="mb-0"> Retouching e-commerce for elite Brand Distributor </h6>
+                                                                    </div>
+                                                                <div class="card-body p-0">
+                                                                        <div id="carousel14" class="carousel slide" data-bs-interval="false">
+                                                                            <div class="carousel-inner">
+                                                                                <div class="carousel-item active">
+                                                                                    <img src="images/epr/ec_4.webp" class="d-block w-100 gallery-img" alt="P14-1"loading="lazy" data-full="images/epr/ec_4f.webp">          
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/epr/ec_1.webp" class="d-block w-100 gallery-img" alt="P14-2"loading="lazy" data-full="images/epr/ec_1f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/epr/ec_2.webp" class="d-block w-100 gallery-img" alt="P14-3"loading="lazy" data-full="images/epr/ec_2f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/epr/ec_3.webp" class="d-block w-100 gallery-img" alt="P14-4"loading="lazy" data-full="images/epr/ec_3f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/epr/ec_5.webp" class="d-block w-100 gallery-img" alt="P14-5"loading="lazy" data-full="images/epr/ec_5f.webp">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel14" data-bs-slide="prev">
+                                                                            <span class="carousel-control-prev-icon"></span>
+                                                                            </button>
+                                                                            <button class="carousel-control-next" type="button" data-bs-target="#carousel14" data-bs-slide="next">
+                                                                            <span class="carousel-control-next-icon"></span>
+                                                                            </button>
+                                                                </div>
+                                                        </div> 
+                                                    </div>   
+                                                    <div class="col-lg-3 col-md-4 col-sm-6">
+                                                        <div class="card h-100 shadow-sm border-0">
+                                                                    <div class="card-header text-center" style="background:#ffccff; color:#3d2131">
+                                                                    <h6 class="mb-0"> Color correction for advertising agency </h6>
+                                                                    </div>
+                                                                <div class="card-body p-0">
+                                                                        <div id="carousel15" class="carousel slide" data-bs-interval="false">
+                                                                            <div class="carousel-inner">
+                                                                                <div class="carousel-item active">
+                                                                                    <img src="images/cols/cc-1.webp" class="d-block w-100 gallery-img" alt="P15-1"loading="lazy" data-full="images/cols/cc-1f.webp">          
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/cols/cc-2.webp" class="d-block w-100 gallery-img" alt="P15-2"loading="lazy" data-full="images/cols/cc-2f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/cols/cc-3.webp" class="d-block w-100 gallery-img" alt="P15-3"loading="lazy" data-full="images/cols/cc-3f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/cols/cc-4.webp" class="d-block w-100 gallery-img" alt="P15-4"loading="lazy" data-full="images/cols/cc-4f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/cols/cc-5.webp" class="d-block w-100 gallery-img" alt="P15-5"loading="lazy" data-full="images/cols/cc-5f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/cols/cc-6.webp" class="d-block w-100 gallery-img" alt="P15-6"loading="lazy" data-full="images/cols/cc-6f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/cols/cc-7.webp" class="d-block w-100 gallery-img" alt="P15-5"loading="lazy" data-full="images/cols/cc-7f.webp">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel15" data-bs-slide="prev">
+                                                                            <span class="carousel-control-prev-icon"></span>
+                                                                            </button>
+                                                                            <button class="carousel-control-next" type="button" data-bs-target="#carousel15" data-bs-slide="next">
+                                                                            <span class="carousel-control-next-icon"></span>
+                                                                            </button>
+                                                                </div>
+                                                        </div> 
+                                                    </div>    
+                                                    <div class="col-lg-3 col-md-4 col-sm-6">
+                                                        <div class="card h-100 shadow-sm border-0">
+                                                                    <div class="card-header text-center" style="background:#ffccff; color:#3d2131">
+                                                                    <h6 class="mb-0"> Invisible mannequin image editing services for e-commerce </h6>
+                                                                    </div>
+                                                                <div class="card-body p-0">
+                                                                        <div id="carousel16" class="carousel slide" data-bs-interval="false">
+                                                                            <div class="carousel-inner">
+                                                                                <div class="carousel-item active">
+                                                                                    <img src="images/gst/g-4.webp" class="d-block w-100 gallery-img" alt="P16-2"loading="lazy" data-full="images/gst/g-4f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/gst/g-1.webp" class="d-block w-100 gallery-img" alt="P16-3"loading="lazy" data-full="images/gst/g-1f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/gst/g-2.webp" class="d-block w-100 gallery-img" alt="P16-4"loading="lazy" data-full="images/gst/g-2f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/gst/g-3.webp" class="d-block w-100 gallery-img" alt="P16-5"loading="lazy" data-full="images/gst/g-3f.webp">
+                                                                                </div>
+                                                                                <div class="carousel-item">
+                                                                                    <img src="images/gst/g-5.webp" class="d-block w-100 gallery-img" alt="P16-6"loading="lazy" data-full="images/gst/g-5f.webp">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel16" data-bs-slide="prev">
+                                                                            <span class="carousel-control-prev-icon"></span>
+                                                                            </button>
+                                                                            <button class="carousel-control-next" type="button" data-bs-target="#carousel16" data-bs-slide="next">
+                                                                            <span class="carousel-control-next-icon"></span>
+                                                                            </button>
+                                                                </div>
+                                                        </div> 
+                                                    </div>    
+
+                                                    
+                                                                                 
+
+
+    <!-- Модалка с каруселью только для текущего проекта -->
+        <div class="modal fade" id="galleryModal" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-0 text-center">
+        <div id="modalCarousel" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner"></div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#modalCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#modalCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+    
+<section id="prices" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Prices</h2>
+        <p class="text-center lead mb-5">All prices and delievery times are approximate. The final cost depends on the scope of work, deadline, and any additional requests. Contact me — let's discuss!</p>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- Карточка 1 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm border-primary">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h5 class="mb-0">Beauty retouching</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title">90 €</h3>
+                        <ul class="list-unstyled mt-3">
+                            <li>3 photos</li>
+                            <li>Delivery Time 2 days</li>
+                            <li>Attractive volume discounts for orders of 30+ images.</li>
+                            <li>30 photos - 600€</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-center bg-light">
+                        <a href="#contact" class="btn btn-outline-primary">Request</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm border-primary">
+                    <div class="card-header bg-success text-white text-center">
+                        <h5 class="mb-0">Retouching for ecommerce, fashion, clothes, models, create ghost mannequin</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title">200 €</h3>
+                        <ul class="list-unstyled mt-3">
+                            <li>10 photos</li>
+                            <li>Delivery Time 2 days</li>
+                            <li>Attractive volume discounts for orders of 30+ images.</li>
+                            <li>50 photos - 750€</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-center bg-light">
+                        <a href="#contact" class="btn btn-outline-success">Request</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm border-primary">
+                    <div class="card-header bg-info text-white text-center">
+                        <h5 class="mb-0">Fashion retouching </h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title">90 €</h3>
+                        <ul class="list-unstyled mt-3">
+                            <li>3 photos</li>
+                            <li>Delivery Time 2 days</li>
+                            <li>Attractive volume discounts for orders of 30+ images.</li>
+                            <li>30 photos - 600€</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-center bg-light">
+                        <a href="#contact" class="btn btn-outline-info">Request</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm border-primary">
+                    <div class="card-header bg-warning text-dark text-center">
+                        <h5 class="mb-0"> Color correction,event retouching, wedding photo editing</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title"> 450 €</h3>
+                        <ul class="list-unstyled mt-3">
+                            <li>100 Photos</li>
+                            <li>Delivery Time 2 days</li>
+                            <li>Attractive volume discounts for orders of 30+ images.</li>
+                            <li>300+ photos - 1 photo = 4,2€ </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-center bg-light">
+                        <a href="#contact" class="btn btn-outline-warning">Request</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm border-primary">
+                    <div class="card-header bg-warning text-dark text-center">
+                        <h5 class="mb-0">Boudoir & Private Retouching</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title">90 €</h3>
+                        <ul class="list-unstyled mt-3">
+                            <li>3 photos</li>
+                            <li>Delivery Time 2 days</li>
+                            <li>Attractive volume discounts for orders of 30+ images.</li>
+                            <li>30 photos - 600€</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-center bg-light">
+                        <a href="#contact" class="btn btn-outline-warning">Request</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm border-primary">
+                    <div class="card-header bg-warning text-dark text-center">
+                        <h5 class="mb-0">Studio, Product & Lifestyle Retouching</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title">200 €</h3>
+                        <ul class="list-unstyled mt-3">
+                            <li>10 photos</li>
+                            <li>Delivery Time 2 days</li>
+                            <li>Attractive volume discounts for orders of 30+ images.</li>
+                            <li>30 photos - 600€</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-center bg-light">
+                        <a href="#contact" class="btn btn-outline-warning">Request</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card h-100 shadow-sm border-primary">
+                    <div class="card-header bg-warning text-dark text-center">
+                        <h5 class="mb-0">Product retouch, Stacking & Blending</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <h3 class="card-title">150 €</h3>
+                        <ul class="list-unstyled mt-3">
+                            <li>5 photos</li>
+                            <li>Delivery Time 2 days</li>
+                            <li>Attractive volume discounts for orders of 30+ images.</li>
+                            <li>30 photos - 750€</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-center bg-light">
+                        <a href="#contact" class="btn btn-outline-warning">Request</a>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Contact -->
+    <!-- Contact -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Work With Me</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+
+                <!-- === РАБОЧАЯ ФОРМА === -->
+                <form action="https://formspree.io/f/mreaaopg" method="POST">
+                    
+                    <div class="mb-3">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <input type="email" name="email" class="form-control" placeholder="Your email" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <textarea name="message" class="form-control" rows="5" placeholder="Message" required></textarea>
+                    </div>
+
+                    <!-- Защита от спама -->
+                    <input type="text" name="_gotcha" style="display:none">
+
+                    <!-- Куда перенаправить после отправки -->
+                    <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
+
+                    <button type="submit" class="btn btn-primary w-100" style="background-color: #3d2131; border-color: #3d2131;">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+        <div class="particles-bg">
+  <!-- 150 частиц будут созданы через CSS -->
+        </div>
+        <section id="reviews" class="py-5 py-lg-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center gy-5 gy-lg-0">
+
+      <!-- Left: Text -->
+      <div class="col-lg-6 order-2 order-lg-1">
+        <h2 class="display-5 fw-bold mb-4" style="color: #3d2131;">Client Reviews</h2>
+        <p class="lead lh-lg mb-4">
+          What my clients say about working with me.  
+          I’m grateful for every kind word and every project we created together.
+        </p>
+
+        <div class="row g-4 mb-4">
+          <!-- Review 1 -->
+          <div class="col-12">
+            <blockquote class="blockquote border-start border-5 border-primary ps-4 py-2">
+              <p class="mb-3">"A brilliant experience working together across many milestones. Fabulous to collaborate with — delivering superb quality of work, excellent communication, and outstanding reliability. Great eye for detail and strong artistic direction throughout."</p>
+              <footer class="blockquote-footer">
+                Ben Lowe. <cite title="Source Title">Owner of Brand "Ellie Lowe Wedding Dresses",United Kingdom</cite>
+              </footer>
+            </blockquote>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="col-12">
+            <blockquote class="blockquote border-start border-5 border-primary ps-4 py-2">
+              <p class="mb-3">"I had a wonderful experience working with Yevheniia. Everything was completed on time with outstanding professionalism and exceptional quality. She is highly knowledgeable, responsive, patient, thorough, and incredibly detail-oriented. Even on a fairly large project, she remained dedicated to getting everything perfect — and she did just that. Truly one of the best professionals I’ve ever worked with. I would give her 10 stars if I could and could not recommend her more highly."</p>
+              <footer class="blockquote-footer">
+               Tara L. <cite title="Source Title">Apparel Brand Owner, USA</cite>
+              </footer>
+            </blockquote>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="col-12">
+            <blockquote class="blockquote border-start border-5 border-primary ps-4 py-2">
+              <p class="mb-3">"We’ve been working with Yevheniia for several months with a few projects and she has been nothing short of amazing. Her professionalism, speed, and attention to detail are consistently top quality. Yevheniia always delivers excellent work and is incredibly responsive to feedback, quickly picking up second-round edits without missing a beat. Highly recommend!"</p>
+              <footer class="blockquote-footer">
+                Diego R. <cite title="Source Title">Owner of Brand "She's Waisted", USA</cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-lg px-5" style="background-color:#3d2131; border-color:#3d2131; color:white;">
+          Leave Your Review
+        </a>
+      </div>
+
+      <!-- Right: Carousel with client photos / review screenshots -->
+      <div class="col-lg-6 order-1 order-lg-2">
+        <div id="reviewsCarousel" class="carousel slide shadow-lg" data-bs-ride="carousel" data-bs-interval="4000">
+
+          <!-- Slides -->
+          <div class="carousel-inner">
+            
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <img src="images/rev/rev (1).png" class="d-block w-100 rounded-4" alt="Review from Anna K." loading="lazy">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <img src="images/rev/rev (2).png" class="d-block w-100 rounded-4" alt="Review from Maria L." loading="lazy">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <img src="images/rev/rev (3).png" class="d-block w-100 rounded-4" alt="Review from Sophia R." loading="lazy">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+
+            <!-- Добавь ещё слайды по желанию -->
+            <div class="carousel-item">
+              <img src="images/rev/rev (4).png" class="d-block w-100 rounded-4" alt="Review from Sophia R." loading="lazy">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/rev/rev (5).png" class="d-block w-100 rounded-4" alt="Review from Sophia R." loading="lazy">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/rev/rev (6).png" class="d-block w-100 rounded-4" alt="Review from Sophia R." loading="lazy">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/rev/rev (7).png" class="d-block w-100 rounded-4" alt="Review from Sophia R." loading="lazy">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/rev/rev (8).png" class="d-block w-100 rounded-4" alt="Review from Sophia R." loading="lazy">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/rev/rev (9).png" class="d-block w-100 rounded-4" alt="Review from Sophia R." loading="lazy">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/rev/rev (10).png" class="d-block w-100 rounded-4" alt="Review from Sophia R." loading="lazy">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- Mobile hint -->
+        <div class="text-center mt-3 d-lg-none">
+          <small class="text-muted">Swipe or tap arrows →</small>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4" style="background-color: #3d2131 !important;">
+        <div class="container">
+            <p class="mb-3">© 2026 Yevga. All rights reserved.</p>
+    
+            <div class="d-flex justify-content-center gap-4 fs-3">
+                <a href="https://www.instagram.com/retoucher.evgeniya/" target="_blank" class="text-white text-decoration-none">
+                    <i class="bi bi-instagram"></i>
+                 </a>
+                <a href="https://www.behance.net/evgen-orlof0c2" target="_blank" class="text-white text-decoration-none">
+                <i class="bi bi-behance"></i>
+                 </a>
+                 <a href="https://www.tiktok.com/@retoucher.evgeniya" target="_blank" class="text-white text-decoration-none">
+                 <i class="bi bi-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com/@retoucher.evgeniya" target="_blank" class="text-white text-decoration-none">
+                 <i class="bi bi-youtube"></i>
+            </div>
+        </div>
+    </footer>       
+<div class="particles-bg">
+  <!-- Частицы создаст JS ниже -->
+</div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- JavaScript для универсального модала (один на все картинки) -->
+    <script>
+// Один модал + карусель внутри
+const modal = document.getElementById('galleryModal');
+const modalInner = document.getElementById('modalCarousel').querySelector('.carousel-inner');
+const modalCarousel = new bootstrap.Carousel(document.getElementById('modalCarousel'), { interval: false });
+
+document.querySelectorAll('.gallery-img').forEach(img => {
+  img.onclick = function() {
+    // Находим все изображения ТОЛЬКО из текущей карточки (текущей маленькой карусели)
+    const currentCarousel = img.closest('.carousel');
+    const allImagesInThisCard = currentCarousel.querySelectorAll('.gallery-img');
+
+    // Формируем слайды только из текущего проекта
+    modalInner.innerHTML = Array.from(allImagesInThisCard).map((el, i) => `
+      <div class="carousel-item ${el === img ? 'active' : ''}">
+        <img src="${el.dataset.full}" 
+             class="d-block w-100" 
+             alt="${el.alt}"
+             style="max-height:85vh; object-fit:contain;">
+      </div>
+    `).join('');
+
+    // Открываем модалку
+    new bootstrap.Modal(modal).show();
+  };
+});
+
+
+    </script>
+    <script>
+  const container = document.querySelector('.particles-bg');
+  const colors = ['#3d2131', '#ffccff', '#f0d1f0']; // твоя палитра
+
+  for (let i = 0; i < 150; i++) {
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+
+    // случайные параметры
+    const size = Math.random() * 12 + 4; // 4–16 px
+    particle.style.width = particle.style.height = size + 'px';
+    particle.style.left = Math.random() * 100 + 'vw';
+    particle.style.top = Math.random() * 120 - 20 + 'vh'; // сверху экрана
+
+    // цвет из твоей палитры
+    particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+
+    // прозрачность
+    particle.style.opacity = Math.random() * 0.6 + 0.3;
+
+    // длительность анимации 20–60 сек
+    const duration = Math.random() * 40 + 20;
+    particle.style.animation = `float ${duration}s infinite linear`;
+    particle.style.animationDelay = `-${Math.random() * 40}s`;
+
+    container.appendChild(particle);
+  }
+</script>
+</body>
+</html>
