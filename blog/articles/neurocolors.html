@@ -127,7 +127,20 @@
     border-radius: 0 8px 8px 0;
     font-style: italic;
     font-weight: 600;
-    color: #ffccff;
+    color: #ffccff;}
+    .share-icon {
+  color: #ffccff;
+  transition: all 0.3s ease;
+}
+
+.share-icon:hover {
+  color: #3d2131;
+  transform: scale(1.25);
+}
+
+.btn-light-custom {
+  min-width: 160px;
+}
   </style>
 </head>
 <body>
@@ -308,48 +321,41 @@
       </div>
     </div>
   </main>
-                      <!-- Share buttons -->
-                          <div class="share-section mt-5 text-center">
-                            <h4 style="color: #ffccff;">Share this article</h4>
-                            <p class="text-muted mb-4">Spread the word in your favorite social networks</p>
-                            
-                            <div class="d-flex justify-content-center gap-3 fs-2">
-                              <!-- Instagram -->
-                              <a href="https://www.instagram.com/" target="_blank" class="text-decoration-none" onclick="shareToInstagram()">
-                                <i class="bi bi-instagram" style="color: #ffccff;"></i>
-                              </a>
-                              
-                              <!-- Behance -->
-                              <a href="https://www.behance.net/" target="_blank" class="text-decoration-none" onclick="shareToBehance()">
-                                <i class="bi bi-behance" style="color: #ffccff;"></i>
-                              </a>
-                              
-                              <!-- TikTok -->
-                              <a href="https://www.tiktok.com/" target="_blank" class="text-decoration-none" onclick="shareToTikTok()">
-                                <i class="bi bi-tiktok" style="color: #ffccff;"></i>
-                              </a>
-                              
-                              <!-- YouTube -->
-                              <a href="https://www.youtube.com/" target="_blank" class="text-decoration-none" onclick="shareToYouTube()">
-                                <i class="bi bi-youtube" style="color: #ffccff;"></i>
-                              </a>
-                              
-                              <!-- Facebook -->
-                              <a href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" class="text-decoration-none" onclick="shareToFacebook()">
-                                <i class="bi bi-facebook" style="color: #ffccff;"></i>
-                              </a>
-                              
-                              <!-- Twitter/X -->
-                              <a href="https://twitter.com/intent/tweet?url=" target="_blank" class="text-decoration-none" onclick="shareToTwitter()">
-                                <i class="bi bi-twitter" style="color: #ffccff;"></i>
-                              </a>
-                              
-                              <!-- LinkedIn -->
-                              <a href="https://www.linkedin.com/shareArticle?mini=true&url=" target="_blank" class="text-decoration-none" onclick="shareToLinkedIn()">
-                                <i class="bi bi-linkedin" style="color: #ffccff;"></i>
-                              </a>
-                            </div>
-                          </div>
+                                        <!-- Блок Поделиться -->
+                  <div class="share-section mt-5 text-center">
+                    <h4 style="color: #ffccff;">Share article</h4>
+                    
+                    <div class="d-flex justify-content-center gap-4 fs-1 mb-4">
+                  
+                      <!-- Facebook -->
+                      <a href="#" onclick="shareTo('facebook'); return false;" class="share-icon">
+                        <i class="bi bi-facebook"></i>
+                      </a>
+                  
+                      <!-- X (Twitter) -->
+                      <a href="#" onclick="shareTo('twitter'); return false;" class="share-icon">
+                        <i class="bi bi-twitter"></i>
+                      </a>
+                  
+                      <!-- LinkedIn -->
+                      <a href="#" onclick="shareTo('linkedin'); return false;" class="share-icon">
+                        <i class="bi bi-linkedin"></i>
+                      </a>
+                  
+                      <!-- Pinterest -->
+                      <a href="#" onclick="shareTo('pinterest'); return false;" class="share-icon">
+                        <i class="bi bi-pinterest"></i>
+                      </a>
+                  
+                    </div>
+                  
+                    <!-- Кнопка Copy Link -->
+                    <button onclick="copyLink()" id="copyBtn" 
+                            class="btn btn-light-custom">
+                      Copy Link
+                    </button>
+                  </div>
+                                            
 
 
 
@@ -394,7 +400,47 @@
                  <i class="bi bi-youtube"></i>
             </div>
   </footer>
+  <script>
+  const currentUrl = window.location.href;
+  const pageTitle = document.title;
 
+  function shareTo(network) {
+    let url = '';
+
+    if (network === 'facebook') {
+      url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
+    } 
+    else if (network === 'twitter') {
+      url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(pageTitle)}`;
+    } 
+    else if (network === 'linkedin') {
+      url = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(currentUrl)}&title=${encodeURIComponent(pageTitle)}`;
+    } 
+    else if (network === 'pinterest') {
+      url = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(currentUrl)}&description=${encodeURIComponent(pageTitle)}`;
+    }
+
+    window.open(url, '_blank');
+  }
+
+  function copyLink() {
+    navigator.clipboard.writeText(currentUrl).then(() => {
+      const btn = document.getElementById('copyBtn');
+      const originalText = btn.innerHTML;
+
+      btn.innerHTML = '✅ Link Copied!';
+      btn.style.backgroundColor = '#3d2131';
+      btn.style.color = '#ffccff';
+
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.style.backgroundColor = '';
+        btn.style.color = '';
+      }, 2500);
+    });
+  }
+</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
