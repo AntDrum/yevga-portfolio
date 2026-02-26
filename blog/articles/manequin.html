@@ -328,12 +328,7 @@
                     <h4 style="color: #ffccff;">Share article</h4>
                     
                     <div class="d-flex justify-content-center gap-4 fs-1 mb-4">
-                  
-                      <!-- Facebook -->
-                      <a href="#" onclick="shareTo('facebook'); return false;" class="share-icon">
-                        <i class="bi bi-facebook"></i>
-                      </a>
-                  
+    
                       <!-- X (Twitter) -->
                       <a href="#" onclick="shareTo('twitter'); return false;" class="share-icon">
                         <i class="bi bi-twitter"></i>
@@ -405,10 +400,8 @@
   function shareTo(network) {
     let url = '';
 
-    if (network === 'facebook') {
-      url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
-    } 
-    else if (network === 'twitter') {
+    
+    if (network === 'twitter') {
       url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(pageTitle)}`;
     } 
     else if (network === 'linkedin') {
@@ -440,6 +433,7 @@
 </body>
 
 </html>
+
 
 
 
